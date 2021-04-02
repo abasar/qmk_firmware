@@ -23,11 +23,11 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 #define VENDOR_ID 0xFEED
 #define PRODUCT_ID 0x0000
 #define DEVICE_VER 0x0001
-#define MANUFACTURER RedForty
+#define MANUFACTURER Abasar
 #define PRODUCT dactyl_left
 
 /* key matrix size */
-#define MATRIX_ROWS 6
+#define MATRIX_ROWS 7
 #define MATRIX_COLS 6
 
 /*
@@ -41,9 +41,9 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
  *
  */
 #define MATRIX_ROW_PINS \
-    { F0, F1, F4, F5, F6, F7 }
+    { B6, B2, B3, F4 , F7, F6, F5 }
 #define MATRIX_COL_PINS \
-    { D0, B7, B3, B2, B1, B0 }
+    { B5, B4, E6, D7, C6, D4 }
 #define UNUSED_PINS
 
 /* COL2ROW, ROW2COL*/
@@ -52,7 +52,7 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 /*
  * Split Keyboard specific options, make sure you have 'SPLIT_KEYBOARD = yes' in your rules.mk, and define SOFT_SERIAL_PIN.
  */
-#define SOFT_SERIAL_PIN D2  // or D1, D2, D3, E6
+//#define SOFT_SERIAL_PIN D2  // or D1, D2, D3, E6
 
 // #define BACKLIGHT_PIN B7
 // #define BACKLIGHT_BREATHING
