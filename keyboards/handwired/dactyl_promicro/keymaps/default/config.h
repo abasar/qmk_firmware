@@ -19,6 +19,17 @@ along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 #define USE_SERIAL
 
+#define MOUSEKEY_INTERVAL 20
+
+#define MOUSEKEY_DELAY 0
+
+#define MOUSEKEY_TIME_TO_MAX 50
+
+#define MOUSEKEY_MAX_SPEED 5
+
+#define MOUSEKEY_WHEEL_DELAY 0
+
+
 // #define MASTER_RIGHT
 //#define EE_HANDS
 // Rows are doubled-up
