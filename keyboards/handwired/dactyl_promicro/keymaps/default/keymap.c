@@ -19,14 +19,14 @@
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_QWERTY] = LAYOUT(
-        KC_ESC          ,   KC_1, KC_2, KC_3, KC_4, KC_5,                                        KC_6   , KC_7     , KC_8     ,  KC_9    , KC_0      ,  KC_1            ,
-        KC_1            ,   KC_Q, KC_W, KC_E, KC_R, KC_T,                                        KC_Y   , KC_U     , KC_I     ,  KC_O    , KC_P      ,  KC_2            ,
-        LCTL_T(KC_LBRC) ,   KC_A, KC_S, KC_D, KC_F, KC_G,                                        KC_H   , KC_J     , KC_K     ,  KC_L    , KC_QUOTE  ,  RCTL_T(KC_RBRC) ,
-        KC_LSPO         ,   KC_Z, KC_X, KC_C, KC_V, KC_B,                                        KC_N   , KC_M     , KC_COMM  ,  KC_DOT  , KC_SLASH  ,  KC_RSPC         , 
-        KC_LALT         ,   KC_5, KC_6, KC_7, KC_8,                                                       KC_PGUP  , KC_PGDN  ,  KC_HOME , KC_END    ,  KC_ESC          ,
-                                              RAISE , KC_2  ,                     KC_1, RAISE,
-                                                      KC_3  ,                      KC_3,
-                                      KC_ENT, KC_SPC, KC_TAB,                     KC_DELETE, KC_BSPC, KC_LSHIFT
+        KC_ESC          ,   KC_1    , KC_2, KC_3, KC_4, KC_5,                                        KC_6   , KC_7     , KC_8     ,  KC_9    , KC_0      ,  KC_1            ,
+        KC_1            ,   KC_Q    , KC_W, KC_E, KC_R, KC_T,                                        KC_Y   , KC_U     , KC_I     ,  KC_O    , KC_P      ,  KC_2            ,
+        LCTL_T(KC_ESC)  ,   KC_A    , KC_S, KC_D, KC_F, KC_G,                                        KC_H   , KC_J     , KC_K     ,  KC_L    , KC_QUOTE  ,  RCTL_T(KC_ESC) ,
+        KC_LSPO         ,   KC_Z    , KC_X, KC_C, KC_V, KC_B,                                        KC_N   , KC_M     , KC_COMM  ,  KC_DOT  , KC_SLASH  ,  KC_RSPC         , 
+        KC_LALT         ,   KC_LCMD , KC_6, KC_7, KC_8,                                                       KC_PGUP  , KC_PGDN  ,  KC_HOME , KC_END    ,  KC_ESC          ,
+                                                        RAISE , KC_2  ,                     KC_1, RAISE,
+                                                                KC_3  ,                     KC_3,
+	                                        RAISE , KC_SPC, KC_TAB,                     KC_DELETE, KC_BSPC, KC_ENT
                                                                         
     ),
     // [_LOWER] = LAYOUT_6x6(
@@ -40,13 +40,13 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     //                                                             _______,       _______
     // 
     [_RAISE] = LAYOUT(
-        _______ ,   _______, _______, _______, _______, _______,                         _______   , _______  , _______  ,  _______   , _______   ,  _______,
+	KC_F1   ,   KC_F2  , KC_F3  , KC_F4  , KC_F5  , KC_F6  ,                         KC_F7     , KC_F8    , KC_F9    ,  KC_F10    , KC_F11    , KC_F12,
         _______ ,   KC_1   , KC_2   , KC_3   , KC_4   , KC_5   ,                         KC_6      , KC_7     , KC_8     ,  KC_9      , KC_0      ,  _______,
         _______ ,   _______, KC_MS_L, KC_MS_D, KC_MS_U, KC_MS_R,                         KC_LEFT   , KC_DOWN  , KC_UP    ,  KC_RIGHT  , KC_SCLN   ,  _______,
-        _______ ,   _______, _______, _______, _______, _______,                         _______   , _______  , _______  ,  KC_MINUS  , KC_EQL    ,  _______,
+        _______ ,   _______, _______, KC_BTN2, KC_BTN1, _______,                         KC_BSLASH , KC_LBRC  , KC_RBRC  ,  KC_MINUS  , KC_EQL    ,  _______,
         _______ ,   _______, _______, _______, _______,                                              _______  , _______  ,  _______   , _______   ,  _______,
-                                               _______ , _______ ,             _______, _______,
-                                                         _______ ,             _______,
-                                      KC_BTN2, KC_BTN1 , _______ ,             _______, _______, _______
+                                               _______, _______ ,             _______, _______,
+                                                        _______ ,             _______,
+                                      _______, _______, _______ ,             _______, _______, _______
     ) 
 };
